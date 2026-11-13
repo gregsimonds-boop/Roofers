@@ -301,15 +301,20 @@ body { padding-bottom: 88px; }
 
 .footer-logo-link{display:block;width:230px;max-width:100%;margin-bottom:24px;}
 .footer-flag-logo{display:block;width:100%;height:auto;border-radius:2px;}
+
+/* New header logo; the Texas flag footer logo is unchanged. */
+.navbar{background:rgba(247,246,242,.97);border-bottom:1px solid var(--line)}
+.header-logo-link{display:block;line-height:0;flex-shrink:0}
+.header-logo{display:block;width:235px;max-width:100%;height:auto;object-fit:contain}
+@media(min-width:901px) and (max-width:1100px){.header-logo{width:205px}.nav-links{gap:20px}}
+@media(max-width:900px){.header-logo{width:190px}}
+@media(max-width:380px){.header-logo{width:170px}}
 </style>
 </head>
 <body>
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-inner">
-      <a class="brand" href="#home" aria-label="Best Price Roofers home">
-        <span class="brand-mark">B</span>
-        <span>BEST PRICE ROOFERS<small>DALLAS · TEXAS</small></span>
-      </a>
+      <a class="brand header-logo-link" href="#home" aria-label="Best Price Roofers home"><img class="header-logo" src="assets/best-price-roofers-header-logo.png" alt="Best Price Roofers" width="2172" height="724"></a>
       <ul class="nav-links" id="mainNav">
         <li><a href="#story">Our story</a></li>
         <li><a href="#services">Services</a></li>
